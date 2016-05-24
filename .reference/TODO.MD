@@ -1,5 +1,10 @@
 May 24th, 2016  
 ==================================
+**Redux**
+* Add actions directory
+* Add reducers directory
+
+
 **Package Cleanup**   (DONE)
 * SINON
 * CORE-JS
@@ -12,12 +17,15 @@ May 24th, 2016
 * Clean up testing errors with exit 0
 * Add OpenWebpackPlugin to webpack config
 
-**Aesthetics**
+**Aesthetics** (DONE)
 * Change default paragraph color to white
 
-**Infrastructure**
-* Add containers directory
-* Add actions directory
-* Add reducers directory
-* Create AppContainer
-* Add routing to App Container
+**Testing** (DONE)
+* Confirm enzyme testing works by adding a check for Hello World on App Container
+* Get rid of linting errors on describe & it 
+
+**Routing** (DONE)
+* Add containers directory & update paths
+* Create App container
+* Add routing to App 
+* Pass in app container as root path for React Router
