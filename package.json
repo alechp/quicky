@@ -7,8 +7,9 @@
     "start": "webpack-dev-server",
     "test": "mocha test/.setup.js test/**/*-test.js --require ignore-styles",
     "production": "webpack -p",
-    "lint": "eslint src/.; exit 0",
-    "fix": "eslint --fix src/.; exit 0"
+    "lint": "eslint app/.; exit 0",
+    "lintall": "eslint ./.; exit 0",
+    "fix": "eslint --fix app/.; exit 0"
   },
   "keywords": [],
   "author": "Alec Hale-Pletka <me@alechp.com> (http://alechp.com)",
