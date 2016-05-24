@@ -5,3 +5,10 @@ $color: #333;
 div {
     background-color: $color;
 }
+.app {
+    text-align:center;
+    width:960px;
+    position:absolute;
+    left:50%;
+    margin-left:-480px;
+}

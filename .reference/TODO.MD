@@ -1,7 +1,6 @@
 May 24th, 2016  
 ==================================
 **Package Cleanup**   (DONE)
-* JSDOM
 * NODE-SASS
 * SASS-LOADER
 * SINON
