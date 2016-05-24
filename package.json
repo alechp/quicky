@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./build/devServer.js",
+    "start": "webpack-dev-server",
     "test": "mocha test/.setup.js test/**/*-test.js --require ignore-styles",
     "production": "webpack -p",
     "lint": "eslint app/.; exit 0",
