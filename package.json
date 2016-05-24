@@ -9,7 +9,8 @@
     "production": "webpack -p",
     "lint": "eslint app/.; exit 0",
     "lintall": "eslint ./.; exit 0",
-    "fix": "eslint --fix app/.; exit 0"
+    "fix": "eslint --fix app/.; exit 0",
+    "fixlintall": "eslint --fix ./.; exit 0"
   },
   "keywords": [],
   "author": "Alec Hale-Pletka <me@alechp.com> (http://alechp.com)",
