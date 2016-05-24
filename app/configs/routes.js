@@ -1,5 +1,5 @@
 import React from 'react';
-import App from 'containers/App/App';
+import App from 'containers/App';
 import { Router, Route, hashHistory } from 'react-router';
 
 const routes = (

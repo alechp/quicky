@@ -12,6 +12,7 @@
     "fix": "eslint --fix app/.; exit 0",
     "fixlintall": "eslint --fix ./.; exit 0"
   },
+  "env": ["mocha", "chai"],
   "keywords": [],
   "author": "Alec Hale-Pletka <me@alechp.com> (http://alechp.com)",
   "license": "ISC",
