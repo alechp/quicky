@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "mocha test/.setup.js test/**/*-test.js --require ignore-styles",
+    "test": "mocha test/.setup.js test/**/*-test.js --require ignore-styles; exit 0",
     "production": "webpack -p",
     "lint": "eslint app/.; exit 0",
     "lintall": "eslint ./.; exit 0",
