@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
-import style from './style/app-style.scss';
+import style from './style.scss';
 
 const propTypes = {
   name: React.PropTypes.string,

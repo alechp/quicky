@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import OpenBrowserPlugin from 'open-browser-webpack-plugin';
 
 const LAUNCH_COMMAND = process.env.npm_lifecycle_event;
 
@@ -16,6 +17,10 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: PATHS.app + '/index.html',
   filename: 'index.html',
   inject: 'body',
+});
+
+const OpenBrowserPluginConfig = new OpenBrowserPlugin({
+  url: 'http://localhost:8080',
 });
 
 const productionPlugin = new webpack.DefinePlugin({
@@ -67,7 +72,7 @@ const developmentConfig = {
     inline: true,
     progress: true,
   },
-  plugins: [HtmlWebpackPluginConfig, new webpack.HotModuleReplacementPlugin()],
+  plugins: [HtmlWebpackPluginConfig, OpenBrowserPluginConfig, new webpack.HotModuleReplacementPlugin()],
 };
 
 const productionConfig = {
