@@ -34,8 +34,24 @@ const base = {
   },
   module: {
     loaders: [
-        {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
-        {test: /\.css$/, loader: 'style!css?sourceMap&modules&localIdentName=[name]__[local]___[hash:base64:5]'},
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css?sourceMap&modules&localIdentName=[name]__[local]___[hash:base64:5]',
+      },
+      {
+        test: /\.scss$/,
+        loaders: [
+          'style?sourceMap',
+          'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+          'resolve-url',
+          'sass?sourceMap',
+        ],
+      },
     ],
   },
   resolve: {
