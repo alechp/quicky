@@ -1,2 +1,2 @@
 import { createStore } from 'redux';
-import reducers from ''
+import reducers from '';
