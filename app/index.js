@@ -6,3 +6,4 @@ ReactDOM.render(
     routes,
     document.getElementById('app')
 );
+
