@@ -35,7 +35,7 @@ const base = {
   ],
   output: {
     path: PATHS.build,
-    filename: 'index_bundle.js',
+    filename: 'bundle.js',
   },
   module: {
     loaders: [
